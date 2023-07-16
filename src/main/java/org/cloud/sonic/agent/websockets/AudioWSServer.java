@@ -55,6 +55,7 @@ public class AudioWSServer implements IAndroidWSServer {
             log.info("Auth Failed!");
             return;
         }
+        //
         IDevice iDevice = AndroidDeviceBridgeTool.getIDeviceByUdId(udId);
 
         session.getUserProperties().put("udId", udId);
